@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 
+
 // Configurazione del database
 const db = mysql.createPool({
   host: 'localhost', // o il tuo host MySQL
@@ -35,7 +36,7 @@ app.post('/users', (req, res) => {
 });
 
 // Avvia il server
-const PORT = 3000;
+const PORT = 3500;
 app.listen(PORT, () => {
   console.log(`Server in ascolto sulla porta ${PORT}`);
 });
